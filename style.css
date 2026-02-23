@@ -1,0 +1,390 @@
+/* ===================== */
+/* GLOBAL */
+/* ===================== */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F5EFE6;
+  font-family: 'Poppins', sans-serif;
+  color: #2C2C2C;
+  line-height: 1.7;
+}
+
+/* ===================== */
+/* NAVIGATION */
+/* ===================== */
+
+nav {
+  background-color: #1B2A41;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #F5EFE6;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #C9A227;
+}
+
+/* ===================== */
+/* HEADER */
+/* ===================== */
+
+h1 {
+  color: #C9A227;
+  text-align: center;
+  font-size: 40px;
+  background-color: #1B2A41;
+  padding: 30px;
+  margin: 0;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #C9A227;
+  margin: 15px auto 0;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: #1B2A41;
+  margin: 50px 0 30px;
+}
+
+.sub-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #C9A227;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+/* ===================== */
+/* GRID PRODUK */
+/* ===================== */
+
+.daftar-produk {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px 40px 60px;
+}
+
+/* ===================== */
+/* CARD PRODUK */
+/* ===================== */
+
+.produk {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 430px;
+}
+
+.produk:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.15);
+}
+
+.produk img {
+  width: 150px;
+  height: auto;
+  margin: 0 auto 15px;
+  border-radius: 8px;
+}
+
+/* Judul Produk */
+.produk h3 {
+  font-size: 18px;
+  color: #1B2A41;
+  line-height: 1.4;
+  min-height: 75px;
+  margin: 10px 0 15px;
+}
+
+/* Harga */
+.harga {
+  font-size: 20px;
+  font-weight: 700;
+  color: #C9A227;
+  margin: 10px 0;
+}
+
+.harga::before {
+  content: "Harga ";
+  font-size: 14px;
+  color: #888;
+}
+
+/* Deskripsi */
+.deskripsi {
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+}
+
+/* ===================== */
+/* TOMBOL */
+/* ===================== */
+
+.back-home {
+  display: inline-block;
+  margin: 60px auto;
+  padding: 12px 30px;
+  background: #1B2A41;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.back-home:hover {
+  background: #C9A227;
+  color: #1B2A41;
+}
+.artikel {
+  max-width: 750px;
+  margin: 60px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  font-family: 'Georgia', serif;
+  line-height: 1.9;
+}
+.artikel p {
+  font-size: 17px;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.artikel blockquote {
+  font-style: italic;
+  padding: 20px;
+  margin: 30px 0;
+  border-left: 4px solid #C9A227;
+  background-color: #f9f9f9;
+  color: #444;
+  clear: both;
+  margin-top: 40px;
+}
+.artikel img {
+  width: 250px;
+  float: left;
+  margin: 0 30px 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.artikel::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.testimoni-terkirim {
+  max-width: 900px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.testimoni-card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.testimoni-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.15);
+}
+
+.testimoni-card h4 {
+  margin: 15px 0 5px;
+  color: #1B2A41;
+}
+
+.testimoni-card span {
+  font-size: 13px;
+  color: #777;
+}
+/* ===================== */
+/* HEADER TAMBAHAN */
+/* ===================== */
+
+header {
+  background-color: #c1e7c7;
+}
+
+/* ===================== */
+/* H2 LAMA */
+/* ===================== */
+
+h2 {
+  color: #1B2A41;
+  text-align: center;
+  font-size: 18px;
+  font-family: initial;
+}
+
+/* ===================== */
+/* LIST STYLE */
+/* ===================== */
+
+ul {
+  font-size: 19px;
+  line-height: 1.9;
+  list-style: none;
+  padding-left: 25px;
+}
+
+li {
+  line-height: 1.5;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 16px;
+}
+
+li::before {
+  content: "▸ ";
+  color: #C9A227;
+  font-weight: bold;
+}
+
+/* ===================== */
+/* CONTAINER */
+/* ===================== */
+
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ===================== */
+/* ARTIKEL TAMBAHAN */
+/* ===================== */
+
+.artikel .penulis {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.artikel .sampul {
+  width: 180px;
+  float: right;
+  margin: 0 0 20px 20px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ===================== */
+/* FORMULIR */
+/* ===================== */
+
+.formulir {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #c3f0c9;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #9ec2a3;
+}
+
+form button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+/* ===================== */
+/* TOMBOL KEMBALI */
+/* ===================== */
+
+.btn-kembali {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 16px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn-kembali:hover {
+  background-color: #004d99;
+}
+
+/* ===================== */
+/* FOOTER */
+/* ===================== */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1B2A41;
+  color: white;
+  margin-top: 60px;
+}
+.formulir {
+  background-color: #1B2A41;
+  color: white;
+}
+.container p {
+  font-size: 20px;
+  line-height: 1.9;
+  color: #444;
+}
